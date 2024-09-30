@@ -2,29 +2,24 @@
 
 Media Morph is a versatile JavaScript library for processing images and videos using `sharp` and `fluent-ffmpeg`. This package allows you to transform media files into various formats with ease.
 
-## Table of Contents
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Processing Images](#processing-images)
-  - [Processing Videos](#processing-videos)
-- [Examples](#examples)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## Installation
 
 To install Media Morph, run the following command:
 
 ```bash
 npm install mediamorph
+```
 
+```bash
 async processImage(inputPath, outputFormats);
 async processVideo(inputPath, outputFormats);
+```
 
-Examples
-Image Processing
-Transforming an image from PNG to JPEG and WEBP:
+# Examples
+## Image Processing
+### Transforming an image from PNG to JPEG and WEBP:
 
+```bash
 const MediaMorph = require('mediamorph');
 const mediaMorph = new MediaMorph();
 
@@ -36,12 +31,12 @@ const mediaMorph = new MediaMorph();
     console.error('Error processing image:', error);
   }
 })();
+```
 
+## Video Processing
+### Converting a video from MP4 to AVI and MOV:
 
-Video Processing
-Converting a video from MP4 to AVI and MOV:
-
-
+```bash
 const MediaMorph = require('my-npm-package');
 const mediaMorph = new MediaMorph();
 
@@ -53,3 +48,4 @@ const mediaMorph = new MediaMorph();
     console.error('Error processing video:', error);
   }
 })();
+```
