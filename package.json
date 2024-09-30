@@ -1,0 +1,14 @@
+{
+  "name": "my-repo",
+  "private": true,
+  "workspaces": [
+    "api",
+    "package"
+  ],
+  "scripts": {
+    "start": "node api/server.js",
+    "test": "npm run test --workspace=package"
+  },
+  "devDependencies": {
+  }
+}
